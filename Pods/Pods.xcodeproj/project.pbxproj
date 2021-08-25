@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00CFB3D638EB1A44D8CBE232D30C258D /* Types+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FDD9C3AECCF5BD9DB44EE22CC3B97 /* Types+Description.swift */; };
+		15061A96184CDD1519A22300D05D9C4F /* CALayer+PinLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDF3736EE15A1BC0659409CD5E9CAB /* CALayer+PinLayout.swift */; };
+		430360E56E0FA74B74C445F6AB5A80C3 /* SizeCalculable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19875901B6A24B54727CEAB6BA41182B /* SizeCalculable.swift */; };
+		47ACCEBDC4DFD24BAED06D71759891AD /* PinLayout+WrapContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431DA59AE4A9FE59019B1CA669E7E3E0 /* PinLayout+WrapContent.swift */; };
+		4FE01A410B7FCBEF1C10D82605162A56 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86356A904997DC37D8F595E42431D /* Coordinates.swift */; };
+		5D979CD9A4A96F12AE7687247AAD9740 /* Pods-quizap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 955BCA3B2AF5BDD3904E8406C0C61370 /* Pods-quizap-dummy.m */; };
+		5FCEB15E82ADB77F3CD9F63823546E3A /* PinLayout+Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53571DBFDFB3A7336E701142B2929599 /* PinLayout+Coordinates.swift */; };
+		606EEBB7438538C99F18579C27983A66 /* PinLayoutObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9836DCAD494377CC34C0B2DCCC394492 /* PinLayoutObjC.swift */; };
+		69C10AD6245BD5E258EF60F740546628 /* Layoutable+PinLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E909A1FB44806EAFEB37A000744619 /* Layoutable+PinLayout.swift */; };
+		6EFD48A06DCA7049EE7528450C9A3D4A /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACC0DD729E81EDF4B0ECEE0C07D300 /* Types.swift */; };
+		742173BE6443427FE9978881735B6476 /* PEdgeInsets+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20813304583D0AE307299DD55147518B /* PEdgeInsets+Operators.swift */; };
+		7C75763E99F400BC6A257D2CBCDB3F11 /* PinLayout+Between.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF8460C3C7421CAFAF0F5685B064C /* PinLayout+Between.swift */; };
+		7D6FB0E0284D3AAE309297E77FDEDE2F /* AutoSizeCalculable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A0EA7F5C49916257B856BDEB047B58 /* AutoSizeCalculable.swift */; };
+		7F2BA648FFB103C79EF795945C2C3EBC /* NSView+PinLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D42E16D8C4E4719C562B3654701E5 /* NSView+PinLayout.swift */; };
+		8784D98043DE90494500B511D6A04DB2 /* PinLayout+Layouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060A47844163DE73477D6FD7E80A77F1 /* PinLayout+Layouting.swift */; };
+		92875C4C2DA22CD19A763AA3DEA96E40 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02106BCBA5E1AC1647B5733CDC09CC2 /* Filters.swift */; };
+		93451247B8C5ACF97594627295BEB1E4 /* PinLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D65E36C9633C1E740E088429B70CC /* PinLayout-dummy.m */; };
+		9F82196D1C99AC21782A6A578B38432B /* PinLayout+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECBD248B71A91E01D24E0F7F5BC9E69 /* PinLayout+Size.swift */; };
+		B01121F2F7DBC119A03470085F0D0026 /* PinLayoutObjCImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141FC6B89C8446DD163DBEBBA23BB950 /* PinLayoutObjCImpl.swift */; };
+		C1DA39155DC1A4E883200A6B821FA6B7 /* PinSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5789A6C71225350C7DC0A820419E25 /* PinSafeArea.swift */; };
+		C1F9B1CDD38B9DA614778B0EAC21F3A6 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646ADD4934C9C30C9071E3B16E6D4808 /* Pin.swift */; };
+		C2823EC38A6E6437F7371F14942EB115 /* PinLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0241DA14BECA5F1EDD1641870F809D /* PinLayout.swift */; };
+		CA263F2F4C827E91C6B4A20F924C4D08 /* UIView+PinLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40DDCCE67C187834AB222B73E9E04 /* UIView+PinLayout.swift */; };
+		CBCA87C441BFDC2E6197380775D8BF15 /* PinLayout+Warning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DA3B2B82A155035330295A68EF5099 /* PinLayout+Warning.swift */; };
+		CF1D47275F9FB5B3D84CFC0F09929A13 /* Pods-quizap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8DE6455260660964B04E150109785C /* Pods-quizap-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D304342B1113812CEAD7617F3D6BD2ED /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B4FC2F966858A88FE9901143146B59 /* Layoutable.swift */; };
+		D8EA453A80A7B8780386067D76FF71A5 /* TypesImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE84052FE76630621D63E023129736 /* TypesImpl.swift */; };
+		E564193BA18E4BAD739F233798170F8C /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AFF4FFB6178FB920DDB7D2655ADAE /* Percent.swift */; };
+		F7CFB7803E7FB04BA4A2292ABDA2E4A9 /* PinLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB5C0CD96BC4AF01BC6EE7097247C799 /* PinLayout-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FC4D2E285DCF787CF2A076D2BD4A7C48 /* PinLayout+Relative.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F1C80608D83BCEFF820D63056C72E /* PinLayout+Relative.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E6D3CA131D6C9BDDBB0BF81BC5A1B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F78D278FB739517AE6B08F96AB75280;
+			remoteInfo = PinLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		060A47844163DE73477D6FD7E80A77F1 /* PinLayout+Layouting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayout+Layouting.swift"; path = "Sources/Impl/PinLayout+Layouting.swift"; sourceTree = "<group>"; };
+		141FC6B89C8446DD163DBEBBA23BB950 /* PinLayoutObjCImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinLayoutObjCImpl.swift; path = Sources/ObjectiveC/PinLayoutObjCImpl.swift; sourceTree = "<group>"; };
+		18A1C966E35FCA0A28673369BB9A097E /* PinLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinLayout.release.xcconfig; sourceTree = "<group>"; };
+		19875901B6A24B54727CEAB6BA41182B /* SizeCalculable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SizeCalculable.swift; path = Sources/SizeCalculable.swift; sourceTree = "<group>"; };
+		20813304583D0AE307299DD55147518B /* PEdgeInsets+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PEdgeInsets+Operators.swift"; path = "Sources/Extensions/PEdgeInsets+Operators.swift"; sourceTree = "<group>"; };
+		24B4FC2F966858A88FE9901143146B59 /* Layoutable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layoutable.swift; path = Sources/Layoutable.swift; sourceTree = "<group>"; };
+		295AFF4FFB6178FB920DDB7D2655ADAE /* Percent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Percent.swift; path = Sources/Impl/Percent.swift; sourceTree = "<group>"; };
+		2A0D6D8788E963C5E822D87BA3A1F903 /* Pods-quizap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-quizap-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A5E50FA9400CDD650AD106D8FB2BB8C /* Pods-quizap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-quizap.release.xcconfig"; sourceTree = "<group>"; };
+		2BD86356A904997DC37D8F595E42431D /* Coordinates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coordinates.swift; path = Sources/Impl/Coordinates.swift; sourceTree = "<group>"; };
+		431DA59AE4A9FE59019B1CA669E7E3E0 /* PinLayout+WrapContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayout+WrapContent.swift"; path = "Sources/PinLayout+WrapContent.swift"; sourceTree = "<group>"; };
+		49A1B30EADC8BCAF734D81E271752CDD /* libPinLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPinLayout.a; path = libPinLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		53571DBFDFB3A7336E701142B2929599 /* PinLayout+Coordinates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayout+Coordinates.swift"; path = "Sources/Impl/PinLayout+Coordinates.swift"; sourceTree = "<group>"; };
+		53A0EA7F5C49916257B856BDEB047B58 /* AutoSizeCalculable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoSizeCalculable.swift; path = Sources/AutoSizeCalculable.swift; sourceTree = "<group>"; };
+		54A08DD8CA98F8AECA22EF2BD248DD97 /* PinLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinLayout.debug.xcconfig; sourceTree = "<group>"; };
+		5AAE84052FE76630621D63E023129736 /* TypesImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypesImpl.swift; path = Sources/Impl/TypesImpl.swift; sourceTree = "<group>"; };
+		622845E87FD37A6CA18674FF2172223F /* Pods-quizap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-quizap.debug.xcconfig"; sourceTree = "<group>"; };
+		63B9D7625F014E450FA354789285B044 /* Pods-quizap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-quizap-acknowledgements.markdown"; sourceTree = "<group>"; };
+		646ADD4934C9C30C9071E3B16E6D4808 /* Pin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pin.swift; path = Sources/Pin.swift; sourceTree = "<group>"; };
+		70DA3B2B82A155035330295A68EF5099 /* PinLayout+Warning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayout+Warning.swift"; path = "Sources/Impl/PinLayout+Warning.swift"; sourceTree = "<group>"; };
+		715CF8460C3C7421CAFAF0F5685B064C /* PinLayout+Between.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayout+Between.swift"; path = "Sources/PinLayout+Between.swift"; sourceTree = "<group>"; };
+		8E0241DA14BECA5F1EDD1641870F809D /* PinLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinLayout.swift; path = Sources/PinLayout.swift; sourceTree = "<group>"; };
+		955BCA3B2AF5BDD3904E8406C0C61370 /* Pods-quizap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-quizap-dummy.m"; sourceTree = "<group>"; };
+		9836DCAD494377CC34C0B2DCCC394492 /* PinLayoutObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinLayoutObjC.swift; path = Sources/ObjectiveC/PinLayoutObjC.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A41D42E16D8C4E4719C562B3654701E5 /* NSView+PinLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+PinLayout.swift"; path = "Sources/Extensions/NSView+PinLayout.swift"; sourceTree = "<group>"; };
+		B52F1C80608D83BCEFF820D63056C72E /* PinLayout+Relative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayout+Relative.swift"; path = "Sources/PinLayout+Relative.swift"; sourceTree = "<group>"; };
+		B9ACC0DD729E81EDF4B0ECEE0C07D300 /* Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Types.swift; path = Sources/Types.swift; sourceTree = "<group>"; };
+		BBEDF3736EE15A1BC0659409CD5E9CAB /* CALayer+PinLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+PinLayout.swift"; path = "Sources/Extensions/CALayer+PinLayout.swift"; sourceTree = "<group>"; };
+		BF32626E4D174B13A319E8889E61FBE9 /* libPods-quizap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-quizap.a"; path = "libPods-quizap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02106BCBA5E1AC1647B5733CDC09CC2 /* Filters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filters.swift; path = Sources/Filters.swift; sourceTree = "<group>"; };
+		CD5789A6C71225350C7DC0A820419E25 /* PinSafeArea.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinSafeArea.swift; path = Sources/Impl/PinSafeArea.swift; sourceTree = "<group>"; };
+		D0F40DDCCE67C187834AB222B73E9E04 /* UIView+PinLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinLayout.swift"; path = "Sources/Extensions/UIView+PinLayout.swift"; sourceTree = "<group>"; };
+		D3E909A1FB44806EAFEB37A000744619 /* Layoutable+PinLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Layoutable+PinLayout.swift"; path = "Sources/Layoutable+PinLayout.swift"; sourceTree = "<group>"; };
+		D74D65E36C9633C1E740E088429B70CC /* PinLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinLayout-dummy.m"; sourceTree = "<group>"; };
+		DA8DE6455260660964B04E150109785C /* Pods-quizap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-quizap-umbrella.h"; sourceTree = "<group>"; };
+		DB5C0CD96BC4AF01BC6EE7097247C799 /* PinLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinLayout-umbrella.h"; sourceTree = "<group>"; };
+		DECBD248B71A91E01D24E0F7F5BC9E69 /* PinLayout+Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayout+Size.swift"; path = "Sources/PinLayout+Size.swift"; sourceTree = "<group>"; };
+		E293BEB44161F2AEF7B2463664002C09 /* PinLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PinLayout.modulemap; sourceTree = "<group>"; };
+		ED4FDD9C3AECCF5BD9DB44EE22CC3B97 /* Types+Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Types+Description.swift"; path = "Sources/Types+Description.swift"; sourceTree = "<group>"; };
+		ED8A43B1CFD8FCA1332BCE9395B02A59 /* Pods-quizap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-quizap.modulemap"; sourceTree = "<group>"; };
+		F87342890644B5CA4C3B1289B8615B81 /* PinLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinLayout-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		075F005936DEC85075A6C3D13492CEDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A119D14BA9F0A51CC8076418E3094846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53B0BA28C9579F2592420109701A67CB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E293BEB44161F2AEF7B2463664002C09 /* PinLayout.modulemap */,
+				D74D65E36C9633C1E740E088429B70CC /* PinLayout-dummy.m */,
+				F87342890644B5CA4C3B1289B8615B81 /* PinLayout-prefix.pch */,
+				DB5C0CD96BC4AF01BC6EE7097247C799 /* PinLayout-umbrella.h */,
+				54A08DD8CA98F8AECA22EF2BD248DD97 /* PinLayout.debug.xcconfig */,
+				18A1C966E35FCA0A28673369BB9A097E /* PinLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PinLayout";
+			sourceTree = "<group>";
+		};
+		77A13BADED14698CC81E3F8DAAEE26AB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6FB8405FD549213E458C3517F9FAE40 /* Pods-quizap */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		989FF91E430441BA5BD86179C359F63E /* PinLayout */ = {
+			isa = PBXGroup;
+			children = (
+				53A0EA7F5C49916257B856BDEB047B58 /* AutoSizeCalculable.swift */,
+				BBEDF3736EE15A1BC0659409CD5E9CAB /* CALayer+PinLayout.swift */,
+				2BD86356A904997DC37D8F595E42431D /* Coordinates.swift */,
+				C02106BCBA5E1AC1647B5733CDC09CC2 /* Filters.swift */,
+				24B4FC2F966858A88FE9901143146B59 /* Layoutable.swift */,
+				D3E909A1FB44806EAFEB37A000744619 /* Layoutable+PinLayout.swift */,
+				A41D42E16D8C4E4719C562B3654701E5 /* NSView+PinLayout.swift */,
+				20813304583D0AE307299DD55147518B /* PEdgeInsets+Operators.swift */,
+				295AFF4FFB6178FB920DDB7D2655ADAE /* Percent.swift */,
+				646ADD4934C9C30C9071E3B16E6D4808 /* Pin.swift */,
+				8E0241DA14BECA5F1EDD1641870F809D /* PinLayout.swift */,
+				715CF8460C3C7421CAFAF0F5685B064C /* PinLayout+Between.swift */,
+				53571DBFDFB3A7336E701142B2929599 /* PinLayout+Coordinates.swift */,
+				060A47844163DE73477D6FD7E80A77F1 /* PinLayout+Layouting.swift */,
+				B52F1C80608D83BCEFF820D63056C72E /* PinLayout+Relative.swift */,
+				DECBD248B71A91E01D24E0F7F5BC9E69 /* PinLayout+Size.swift */,
+				70DA3B2B82A155035330295A68EF5099 /* PinLayout+Warning.swift */,
+				431DA59AE4A9FE59019B1CA669E7E3E0 /* PinLayout+WrapContent.swift */,
+				9836DCAD494377CC34C0B2DCCC394492 /* PinLayoutObjC.swift */,
+				141FC6B89C8446DD163DBEBBA23BB950 /* PinLayoutObjCImpl.swift */,
+				CD5789A6C71225350C7DC0A820419E25 /* PinSafeArea.swift */,
+				19875901B6A24B54727CEAB6BA41182B /* SizeCalculable.swift */,
+				B9ACC0DD729E81EDF4B0ECEE0C07D300 /* Types.swift */,
+				ED4FDD9C3AECCF5BD9DB44EE22CC3B97 /* Types+Description.swift */,
+				5AAE84052FE76630621D63E023129736 /* TypesImpl.swift */,
+				D0F40DDCCE67C187834AB222B73E9E04 /* UIView+PinLayout.swift */,
+				53B0BA28C9579F2592420109701A67CB /* Support Files */,
+			);
+			name = PinLayout;
+			path = PinLayout;
+			sourceTree = "<group>";
+		};
+		AED963059CE4D066DDF23825E55E12F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49A1B30EADC8BCAF734D81E271752CDD /* libPinLayout.a */,
+				BF32626E4D174B13A319E8889E61FBE9 /* libPods-quizap.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6FB8405FD549213E458C3517F9FAE40 /* Pods-quizap */ = {
+			isa = PBXGroup;
+			children = (
+				ED8A43B1CFD8FCA1332BCE9395B02A59 /* Pods-quizap.modulemap */,
+				63B9D7625F014E450FA354789285B044 /* Pods-quizap-acknowledgements.markdown */,
+				2A0D6D8788E963C5E822D87BA3A1F903 /* Pods-quizap-acknowledgements.plist */,
+				955BCA3B2AF5BDD3904E8406C0C61370 /* Pods-quizap-dummy.m */,
+				DA8DE6455260660964B04E150109785C /* Pods-quizap-umbrella.h */,
+				622845E87FD37A6CA18674FF2172223F /* Pods-quizap.debug.xcconfig */,
+				2A5E50FA9400CDD650AD106D8FB2BB8C /* Pods-quizap.release.xcconfig */,
+			);
+			name = "Pods-quizap";
+			path = "Target Support Files/Pods-quizap";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				D4ED0055804F72FC7B6C7547950A3A9E /* Pods */,
+				AED963059CE4D066DDF23825E55E12F4 /* Products */,
+				77A13BADED14698CC81E3F8DAAEE26AB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D4ED0055804F72FC7B6C7547950A3A9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				989FF91E430441BA5BD86179C359F63E /* PinLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1C7747A550853E08C9DC96786626CE15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CFB7803E7FB04BA4A2292ABDA2E4A9 /* PinLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2B6C0BEF65E33B35CA2A422139FEE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1D47275F9FB5B3D84CFC0F09929A13 /* Pods-quizap-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4B6BC2EAFE4F9BE8A7306AF891FFDB98 /* Pods-quizap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB9AB2AF34AFC3B531FE9B345FB2C9EB /* Build configuration list for PBXNativeTarget "Pods-quizap" */;
+			buildPhases = (
+				2E2B6C0BEF65E33B35CA2A422139FEE8 /* Headers */,
+				96F8BC8F2FBC7945FEAD4BCA2B3055E5 /* Sources */,
+				075F005936DEC85075A6C3D13492CEDD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CCBBB0DC2470EEA668CD3E6E5B21650 /* PBXTargetDependency */,
+			);
+			name = "Pods-quizap";
+			productName = "Pods-quizap";
+			productReference = BF32626E4D174B13A319E8889E61FBE9 /* libPods-quizap.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4F78D278FB739517AE6B08F96AB75280 /* PinLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60280F502390FF8957EF242287C40408 /* Build configuration list for PBXNativeTarget "PinLayout" */;
+			buildPhases = (
+				1C7747A550853E08C9DC96786626CE15 /* Headers */,
+				7CACA2A3958703154E3019136B74C3BE /* Sources */,
+				A119D14BA9F0A51CC8076418E3094846 /* Frameworks */,
+				5B7C8D5F5069A580871CB30D7EF502BC /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinLayout;
+			productName = PinLayout;
+			productReference = 49A1B30EADC8BCAF734D81E271752CDD /* libPinLayout.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AED963059CE4D066DDF23825E55E12F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F78D278FB739517AE6B08F96AB75280 /* PinLayout */,
+				4B6BC2EAFE4F9BE8A7306AF891FFDB98 /* Pods-quizap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B7C8D5F5069A580871CB30D7EF502BC /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/PinLayout/PinLayout.modulemap",
+				"${PODS_ROOT}/Headers/Public/PinLayout/PinLayout-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/PinLayout-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/PinLayout/PinLayout.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/PinLayout/PinLayout-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CACA2A3958703154E3019136B74C3BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6FB0E0284D3AAE309297E77FDEDE2F /* AutoSizeCalculable.swift in Sources */,
+				15061A96184CDD1519A22300D05D9C4F /* CALayer+PinLayout.swift in Sources */,
+				4FE01A410B7FCBEF1C10D82605162A56 /* Coordinates.swift in Sources */,
+				92875C4C2DA22CD19A763AA3DEA96E40 /* Filters.swift in Sources */,
+				69C10AD6245BD5E258EF60F740546628 /* Layoutable+PinLayout.swift in Sources */,
+				D304342B1113812CEAD7617F3D6BD2ED /* Layoutable.swift in Sources */,
+				7F2BA648FFB103C79EF795945C2C3EBC /* NSView+PinLayout.swift in Sources */,
+				742173BE6443427FE9978881735B6476 /* PEdgeInsets+Operators.swift in Sources */,
+				E564193BA18E4BAD739F233798170F8C /* Percent.swift in Sources */,
+				C1F9B1CDD38B9DA614778B0EAC21F3A6 /* Pin.swift in Sources */,
+				7C75763E99F400BC6A257D2CBCDB3F11 /* PinLayout+Between.swift in Sources */,
+				5FCEB15E82ADB77F3CD9F63823546E3A /* PinLayout+Coordinates.swift in Sources */,
+				8784D98043DE90494500B511D6A04DB2 /* PinLayout+Layouting.swift in Sources */,
+				FC4D2E285DCF787CF2A076D2BD4A7C48 /* PinLayout+Relative.swift in Sources */,
+				9F82196D1C99AC21782A6A578B38432B /* PinLayout+Size.swift in Sources */,
+				CBCA87C441BFDC2E6197380775D8BF15 /* PinLayout+Warning.swift in Sources */,
+				47ACCEBDC4DFD24BAED06D71759891AD /* PinLayout+WrapContent.swift in Sources */,
+				93451247B8C5ACF97594627295BEB1E4 /* PinLayout-dummy.m in Sources */,
+				C2823EC38A6E6437F7371F14942EB115 /* PinLayout.swift in Sources */,
+				606EEBB7438538C99F18579C27983A66 /* PinLayoutObjC.swift in Sources */,
+				B01121F2F7DBC119A03470085F0D0026 /* PinLayoutObjCImpl.swift in Sources */,
+				C1DA39155DC1A4E883200A6B821FA6B7 /* PinSafeArea.swift in Sources */,
+				430360E56E0FA74B74C445F6AB5A80C3 /* SizeCalculable.swift in Sources */,
+				00CFB3D638EB1A44D8CBE232D30C258D /* Types+Description.swift in Sources */,
+				6EFD48A06DCA7049EE7528450C9A3D4A /* Types.swift in Sources */,
+				D8EA453A80A7B8780386067D76FF71A5 /* TypesImpl.swift in Sources */,
+				CA263F2F4C827E91C6B4A20F924C4D08 /* UIView+PinLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F8BC8F2FBC7945FEAD4BCA2B3055E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D979CD9A4A96F12AE7687247AAD9740 /* Pods-quizap-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CCBBB0DC2470EEA668CD3E6E5B21650 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PinLayout;
+			target = 4F78D278FB739517AE6B08F96AB75280 /* PinLayout */;
+			targetProxy = 1E6D3CA131D6C9BDDBB0BF81BC5A1B87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		55F550E2A7096500AF1237C671CDB02F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 622845E87FD37A6CA18674FF2172223F /* Pods-quizap.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-quizap/Pods-quizap.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92A3E9AC052A7345115439021B218E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A618B42E6545EEDCD4160D840E86803B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18A1C966E35FCA0A28673369BB9A097E /* PinLayout.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PinLayout/PinLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/PinLayout/PinLayout.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PinLayout;
+				PRODUCT_NAME = PinLayout;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDF0C5EB3FD5909F6425AE6E6E82E320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A08DD8CA98F8AECA22EF2BD248DD97 /* PinLayout.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PinLayout/PinLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/PinLayout/PinLayout.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PinLayout;
+				PRODUCT_NAME = PinLayout;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5512DE8BDAC2A615AD475DFF6F7A902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5E50FA9400CDD650AD106D8FB2BB8C /* Pods-quizap.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-quizap/Pods-quizap.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125C51B0F88E28C868DC90BD45E4E727 /* Debug */,
+				92A3E9AC052A7345115439021B218E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60280F502390FF8957EF242287C40408 /* Build configuration list for PBXNativeTarget "PinLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF0C5EB3FD5909F6425AE6E6E82E320 /* Debug */,
+				A618B42E6545EEDCD4160D840E86803B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB9AB2AF34AFC3B531FE9B345FB2C9EB /* Build configuration list for PBXNativeTarget "Pods-quizap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F550E2A7096500AF1237C671CDB02F /* Debug */,
+				F5512DE8BDAC2A615AD475DFF6F7A902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

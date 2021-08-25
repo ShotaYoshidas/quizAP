@@ -1,0 +1,6 @@
+module Pods_quizap {
+  umbrella header "Pods-quizap-umbrella.h"
+
+  export *
+  module * { export * }
+}
