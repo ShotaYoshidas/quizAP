@@ -11,7 +11,7 @@ class HowToPlayViewController: UIViewController {
     
     let returnButton:UIButton = {
         let rv = UIButton()
-        rv.setTitle("戻る", for: UIControl.State.normal)
+        rv.setTitle("戻", for: UIControl.State.normal)
         rv.addTarget(self, action: #selector(returnAction), for: UIControl.Event.touchUpInside)
         rv.setTitleColor(UIColor.white, for: UIControl.State.normal)
         rv.layer.cornerRadius = 10
