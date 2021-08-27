@@ -21,7 +21,6 @@ class HowToPlayViewController: UIViewController {
         rv.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
         return rv
     }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
