@@ -11,8 +11,9 @@ class CollectionViewController: UIViewController {
     var photos = ["images","images","images","images","images","images","images","images","images","images","images","images","images","images","images"]
     
     var charaname:[String] = ["ゼウス","ポセイドン","ハデス","images","images","images","images","images","images","images","images","images","images","images","images"]
-    var points = 1
     
+    var characterArray:[String] = []
+    var points = 1
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -99,6 +100,9 @@ class CollectionViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        characterArray = loadCSV(filName: "character")
+        print(characterArray)
+        
         //                これだとギリシャ問題のみ！！
         switch firstPoint {
         case 1:
@@ -113,8 +117,21 @@ class CollectionViewController: UIViewController {
         default:
             photos = ["images","images","images","images","images","images","images","images","images","images","images","images","images","images","images"]
         }
-      
     }
+    func loadCSV(filName: String) -> [String] {
+        //        強制アンラップ！！！！
+        let csvBuldle = Bundle.main.path(forResource: filName, ofType: "csv")!
+        do {
+            let csvData =  try String(contentsOfFile: csvBuldle, encoding: String.Encoding.utf8)
+            let lineChange = csvData.replacingOccurrences(of:"\r",with:"\n")
+            characterArray = lineChange.components(separatedBy: "\n")
+            characterArray.removeLast()
+        } catch {
+            print("エラー")
+        }
+        return characterArray
+    }
+    
 //    willとのちがいは？
     override func viewDidLayoutSubviews() {
         collectionView.pin.all()
@@ -123,6 +140,8 @@ class CollectionViewController: UIViewController {
     
    
 }
+
+
 //     UICollectionViewDataSource
 extension CollectionViewController:UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

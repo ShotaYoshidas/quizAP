@@ -155,14 +155,6 @@ class QuizViewController: UIViewController {
         qt.isEditable = false
         return qt
     }()
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if quizCount == csvArray.count {
-//            let quizVC = segue.destination as! ScoreViewController
-//            quizVC.selectLevel = selectLevel
-//            let quizVC2 = segue.destination as! ScoreViewController
-//            quizVC2.selectTypequiz = selectTypequiz
-//        }
-//    }
         override func viewDidLoad() {
             super.viewDidLoad()
             view.backgroundColor = .white
