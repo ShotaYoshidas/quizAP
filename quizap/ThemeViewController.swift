@@ -41,13 +41,13 @@ class ThemeViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(red: 236/255, green: 211/255, blue: 175/255, alpha: 1)
         view.addSubview(gameoverLabel)
         view.addSubview(returnButton)
         view.addSubview(collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = UIColor(red: 236/255, green: 211/255, blue: 175/255, alpha: 1)
     }
     @objc func returnAction(_sender: UIButton) {
         self.presentingViewController?.dismiss(animated: false)

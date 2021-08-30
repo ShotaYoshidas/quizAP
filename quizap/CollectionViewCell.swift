@@ -27,12 +27,16 @@ class CollectionViewCell: UICollectionViewCell {
    
     override init(frame: CGRect) {
         super.init(frame: frame)
-       
+        self.backgroundColor = .white
+        self.layer.borderWidth = 2
+        self.layer.cornerRadius = 10
     }
     override func layoutSubviews() {
         super.layoutSubviews()
         addSubview(characterLabel)
-        addSubview(character)
+        
+//        これすると画面がはみ出る
+//        addSubview(character)
         characterLabel.pin.all()
         character.pin.all()
     }
