@@ -10,23 +10,26 @@ import UIKit
 class CollectionViewController: UIViewController {
     var photos = ["images","images","images","images","images","images","images","images","images","images","images","images","images","images","images"]
     
-    var charaname:[String] = ["ゼウス","ポセイドン","ハデス","images","images","images","images","images","images","images","images","images","images","images","images"]
+//    var charaname:[String] = ["ゼウス","ポセイドン","ハデス","images","images","images","images","images","images","images","images","images","images","images","images"]
     
     var characterArray:[String] = []
+    var characterSepa:[String] = []
+    
     var points = 1
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.register(CollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
-        cv.backgroundColor = .white
+        cv.backgroundColor = UIColor(red: 236/255, green: 211/255, blue: 175/255, alpha: 1)
         return cv
     }()
     let collectionLabel:UILabel = {
         let cl = UILabel()
-        cl.text = "コレクション"
+        cl.text = "神コレ"
         cl.textColor = .black
-        cl.frame = CGRect(x: UIScreen.main.bounds.width/2-50, y: 20, width: 100, height: 50)
+        cl.font = UIFont.systemFont(ofSize: 45)
+        cl.frame = CGRect(x: UIScreen.main.bounds.width/2-65, y: 20, width: 130, height: 50)
         return cl
     }()
     let rerutnButton:UIButton = {
@@ -37,7 +40,7 @@ class CollectionViewController: UIViewController {
         rb.layer.borderWidth = 0
         rb.setTitleColor(UIColor.white, for: UIControl.State.normal)
         rb.addTarget(self, action: #selector(returnAction), for: UIControl.Event.touchUpInside)
-        rb.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        rb.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         rb.layer.cornerRadius = 10
         return rb
     }()
@@ -101,13 +104,15 @@ class CollectionViewController: UIViewController {
         collectionView.dataSource = self
         
         characterArray = loadCSV(filName: "character")
-        print(characterArray)
+        print(characterArray.count)
+        separate()
+        print(characterArray.count)
         
         //                これだとギリシャ問題のみ！！
         switch firstPoint {
         case 1:
             photos = ["images2","images","images","images","images","images","images","images","images","images","images","images","images","images","images"]
-            print("キャラ1")
+//            print("キャラ1")
         case 2:
             photos = ["images2","images2","images","images","images","images","images","images","images","images","images","images","images","images","images"]
             print("キャラ2")
@@ -117,6 +122,11 @@ class CollectionViewController: UIViewController {
         default:
             photos = ["images","images","images","images","images","images","images","images","images","images","images","images","images","images","images"]
         }
+        
+        func separate(){
+            characterSepa = characterArray[0].components(separatedBy: ",")
+        }
+        
     }
     func loadCSV(filName: String) -> [String] {
         //        強制アンラップ！！！！
@@ -151,8 +161,9 @@ extension CollectionViewController:UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? CollectionViewCell {
+           
             let cellImage = UIImage(named: photos[indexPath.row])!
-            let cellText = charaname[indexPath.row]
+            let cellText = characterSepa[indexPath.row]
             cell.configure(image: cellImage, text: cellText)
             return cell
         }

@@ -18,12 +18,12 @@ class HowToPlayViewController: UIViewController {
         rv.frame = CGRect(x: UIScreen.main.bounds.width/10, y: 720, width: 100, height: 50)
         rv.layer.backgroundColor = UIColor.white.cgColor
         rv.layer.borderWidth = 0
-        rv.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        rv.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         return rv
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(red: 236/255, green: 211/255, blue: 175/255, alpha: 1)
         view.addSubview(returnButton)
     }
     @objc func returnAction(_sender: UIButton) {

@@ -22,7 +22,6 @@
 		6A271A2F25CC439300AEDB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A271A2E25CC439300AEDB76 /* Assets.xcassets */; };
 		6A271A3225CC439300AEDB76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A271A3025CC439300AEDB76 /* LaunchScreen.storyboard */; };
 		6A271A4125CC4B8400AEDB76 /* quiz1.1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6A271A4025CC4B8400AEDB76 /* quiz1.1.csv */; };
-		6A2CA86B2679065B005C9B15 /* IMG_8700.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CA86A2679065B005C9B15 /* IMG_8700.JPG */; };
 		6A33180626860B7D00C3F735 /* quiz2.1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6A33180526860B7D00C3F735 /* quiz2.1.csv */; };
 		6A33180E26861D3600C3F735 /* quiz2.2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6A33180D26861D3600C3F735 /* quiz2.2.csv */; };
 		6A33181026861FA900C3F735 /* quiz2.3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6A33180F26861FA900C3F735 /* quiz2.3.csv */; };
@@ -57,7 +56,6 @@
 		6A271A3125CC439300AEDB76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A271A3325CC439300AEDB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A271A4025CC4B8400AEDB76 /* quiz1.1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.1.csv; sourceTree = "<group>"; };
-		6A2CA86A2679065B005C9B15 /* IMG_8700.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8700.JPG; sourceTree = "<group>"; };
 		6A33180526860B7D00C3F735 /* quiz2.1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.1.csv; sourceTree = "<group>"; };
 		6A33180D26861D3600C3F735 /* quiz2.2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.2.csv; sourceTree = "<group>"; };
 		6A33180F26861FA900C3F735 /* quiz2.3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.3.csv; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			children = (
 				6ABA07C525D9552C00233662 /* correct.png */,
 				6ABA07C625D9552C00233662 /* incorrect.png */,
-				6A2CA86A2679065B005C9B15 /* IMG_8700.JPG */,
 				6A82946E26A2B9FF009EA303 /* IMG_5932.PNG */,
 				6A82947026A2BA30009EA303 /* keyImage.png */,
 			);
@@ -226,7 +223,6 @@
 				6A82947126A2BA30009EA303 /* keyImage.png in Resources */,
 				6ABA07C725D9552C00233662 /* correct.png in Resources */,
 				6A33180E26861D3600C3F735 /* quiz2.2.csv in Resources */,
-				6A2CA86B2679065B005C9B15 /* IMG_8700.JPG in Resources */,
 				6ABA07C825D9552C00233662 /* incorrect.png in Resources */,
 				6A3318162686202900C3F735 /* quiz3.3.csv in Resources */,
 				6A271A3225CC439300AEDB76 /* LaunchScreen.storyboard in Resources */,
