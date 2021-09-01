@@ -36,7 +36,7 @@ class CollectionViewCell: UICollectionViewCell {
         addSubview(characterLabel)
         
 //        これすると画面がはみ出る
-//        addSubview(character)
+        addSubview(character)
         characterLabel.pin.all()
         character.pin.all()
     }
