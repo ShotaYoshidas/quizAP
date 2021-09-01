@@ -111,7 +111,7 @@ class CollectionViewController: UIViewController {
         //                これだとギリシャ問題のみ！！
         switch firstPoint {
         case 1:
-            photos = ["images2","images","images","images","images","images","images","images","images","images","images","images","images","images","images"]
+            photos = ["aaa","images","images","images","images","images","images","images","images","images","images","images","images","images","images"]
 //            print("キャラ1")
         case 2:
             photos = ["images2","images2","images","images","images","images","images","images","images","images","images","images","images","images","images"]
