@@ -37,9 +37,9 @@ class ScoreViewController: UIViewController {
         tb.layer.cornerRadius = 10
         tb.layer.borderWidth = 0
         tb.setTitleColor(UIColor.white, for: UIControl.State.normal)
-        tb.frame = CGRect(x: UIScreen.main.bounds.width/2 - 60, y: 650, width: 120, height: 60)
+        tb.frame = CGRect(x: UIScreen.main.bounds.width/2 - 75, y: 470, width: 150, height: 60)
         tb.layer.borderColor = UIColor.white.cgColor
-        tb.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        tb.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         tb.addTarget(self, action: #selector(toppButton), for: UIControl.Event.touchUpInside)
         return tb
     }()
@@ -49,15 +49,15 @@ class ScoreViewController: UIViewController {
         sb.setTitleColor(UIColor.white, for: UIControl.State.normal)
         sb.layer.cornerRadius = 10
         sb.layer.borderWidth = 0
-        sb.frame = CGRect(x: UIScreen.main.bounds.width/2 - 60, y: 550, width: 120, height: 60)
+        sb.frame = CGRect(x: UIScreen.main.bounds.width/2 - 75, y: 550, width: 150, height: 60)
         sb.layer.borderColor = UIColor.white.cgColor
-        sb.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        sb.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         sb.addTarget(self, action: #selector(shareButton), for: UIControl.Event.touchUpInside)
         return sb
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(red: 236/255, green: 211/255, blue: 175/255, alpha: 1)
         view.addSubview(scoreLabel)
         view.addSubview(commmentLabel)
         view.addSubview(topButtonAction)
@@ -129,7 +129,7 @@ class ScoreViewController: UIViewController {
         
     }
     @objc func toppButton(sender:UIButton) {
-        presentingViewController?.presentedViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: false)
+        presentingViewController?.presentedViewController?.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: false)
     }
     @objc func shareButton(sender:Any){
         let activityItems = ["\(corectCount)問正解しました","#神Quiz"]

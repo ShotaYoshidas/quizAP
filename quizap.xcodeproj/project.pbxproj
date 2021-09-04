@@ -28,14 +28,12 @@
 		6A3318122686200800C3F735 /* quiz3.1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6A3318112686200800C3F735 /* quiz3.1.csv */; };
 		6A3318142686201700C3F735 /* quiz3.2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6A3318132686201700C3F735 /* quiz3.2.csv */; };
 		6A3318162686202900C3F735 /* quiz3.3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6A3318152686202900C3F735 /* quiz3.3.csv */; };
-		6A82946F26A2B9FF009EA303 /* IMG_5932.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6A82946E26A2B9FF009EA303 /* IMG_5932.PNG */; };
-		6A82947126A2BA30009EA303 /* keyImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A82947026A2BA30009EA303 /* keyImage.png */; };
 		6ABA07C725D9552C00233662 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA07C525D9552C00233662 /* correct.png */; };
 		6ABA07C825D9552C00233662 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA07C625D9552C00233662 /* incorrect.png */; };
 		6ABA082925E3F7BD00233662 /* quiz1.2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA082825E3F7BD00233662 /* quiz1.2.csv */; };
 		6ABA082C25E3F7FE00233662 /* quiz1.3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA082B25E3F7FE00233662 /* quiz1.3.csv */; };
 		6ACA586A26D93C1E0007EB44 /* character.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6ACA586926D93C1E0007EB44 /* character.csv */; };
-		6ACA586E26DFB9860007EB44 /* aaa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6ACA586D26DFB9860007EB44 /* aaa.jpg */; };
+		6ACA587226E3B70B0007EB44 /* instructions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6ACA587126E3B70B0007EB44 /* instructions.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,14 +61,12 @@
 		6A3318112686200800C3F735 /* quiz3.1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.1.csv; sourceTree = "<group>"; };
 		6A3318132686201700C3F735 /* quiz3.2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.2.csv; sourceTree = "<group>"; };
 		6A3318152686202900C3F735 /* quiz3.3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.3.csv; sourceTree = "<group>"; };
-		6A82946E26A2B9FF009EA303 /* IMG_5932.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_5932.PNG; path = ../../../../../Downloads/IMG_5932.PNG; sourceTree = "<group>"; };
-		6A82947026A2BA30009EA303 /* keyImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyImage.png; sourceTree = "<group>"; };
 		6ABA07C525D9552C00233662 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
 		6ABA07C625D9552C00233662 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 		6ABA082825E3F7BD00233662 /* quiz1.2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.2.csv; sourceTree = "<group>"; };
 		6ABA082B25E3F7FE00233662 /* quiz1.3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.3.csv; sourceTree = "<group>"; };
 		6ACA586926D93C1E0007EB44 /* character.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = character.csv; sourceTree = "<group>"; };
-		6ACA586D26DFB9860007EB44 /* aaa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aaa.jpg; sourceTree = "<group>"; };
+		6ACA587126E3B70B0007EB44 /* instructions.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = instructions.csv; sourceTree = "<group>"; };
 		B9CAB701969E1C88D3FBD309 /* libPods-quizap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quizap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,6 +103,7 @@
 				6A3318132686201700C3F735 /* quiz3.2.csv */,
 				6A3318152686202900C3F735 /* quiz3.3.csv */,
 				6ACA586926D93C1E0007EB44 /* character.csv */,
+				6ACA587126E3B70B0007EB44 /* instructions.csv */,
 				6A271A2425CC439200AEDB76 /* quizap */,
 				6A271A2325CC439200AEDB76 /* Products */,
 				8ED839B64272D73A190735C6 /* Pods */,
@@ -147,11 +144,8 @@
 		6ABA07C425D9552C00233662 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				6ACA586D26DFB9860007EB44 /* aaa.jpg */,
 				6ABA07C525D9552C00233662 /* correct.png */,
 				6ABA07C625D9552C00233662 /* incorrect.png */,
-				6A82946E26A2B9FF009EA303 /* IMG_5932.PNG */,
-				6A82947026A2BA30009EA303 /* keyImage.png */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -223,7 +217,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A82947126A2BA30009EA303 /* keyImage.png in Resources */,
 				6ABA07C725D9552C00233662 /* correct.png in Resources */,
 				6A33180E26861D3600C3F735 /* quiz2.2.csv in Resources */,
 				6ABA07C825D9552C00233662 /* incorrect.png in Resources */,
@@ -232,14 +225,13 @@
 				6A3318142686201700C3F735 /* quiz3.2.csv in Resources */,
 				6ACA586A26D93C1E0007EB44 /* character.csv in Resources */,
 				6A271A2F25CC439300AEDB76 /* Assets.xcassets in Resources */,
-				6A82946F26A2B9FF009EA303 /* IMG_5932.PNG in Resources */,
 				6ABA082925E3F7BD00233662 /* quiz1.2.csv in Resources */,
 				6A33180626860B7D00C3F735 /* quiz2.1.csv in Resources */,
 				6A271A4125CC4B8400AEDB76 /* quiz1.1.csv in Resources */,
-				6ACA586E26DFB9860007EB44 /* aaa.jpg in Resources */,
 				6ABA082C25E3F7FE00233662 /* quiz1.3.csv in Resources */,
 				6A3318122686200800C3F735 /* quiz3.1.csv in Resources */,
 				6A33181026861FA900C3F735 /* quiz2.3.csv in Resources */,
+				6ACA587226E3B70B0007EB44 /* instructions.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
