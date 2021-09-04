@@ -9,9 +9,7 @@ import UIKit
 
 class CollectionViewController: UIViewController {
     var photos = ["images","images","images","images","images","images","images","images","images","images","images","images","images","images","images"]
-    
-//    var charaname:[String] = ["ゼウス","ポセイドン","ハデス","images","images","images","images","images","images","images","images","images","images","images","images"]
-    
+        
     var characterArray:[String] = []
     var characterSepa:[String] = []
     
@@ -59,7 +57,7 @@ class CollectionViewController: UIViewController {
         cv.layer.masksToBounds = true
         cv.layer.borderColor = UIColor.black.cgColor
         cv.layer.borderWidth = 2
-        cv.frame = CGRect(x: 20, y: Int(UIScreen.main.bounds.height)/2-230, width: Int(UIScreen.main.bounds.width)-40, height: 280)
+        cv.frame = CGRect(x: 20, y: Int(UIScreen.main.bounds.height)/2-230, width: Int(UIScreen.main.bounds.width)-40, height: 320)
         cv.isUserInteractionEnabled = true
         return cv
     }()
@@ -120,7 +118,7 @@ class CollectionViewController: UIViewController {
             photos = ["images2","images2","images2","images","images","images","images","images","images","images","images","images","images","images","images"]
             print("キャラ3")
         default:
-            photos = ["images","images","images","images","images","images","images","images","images","images","images","images","images","images","images"]
+            photos = ["a","b","c","z","z","z","z","z","z","z","z","z","z","z","z"]
         }
         
         func separate(){
@@ -147,11 +145,7 @@ class CollectionViewController: UIViewController {
         collectionView.pin.all()
         overlay.isHidden = false
     }
-    
-   
 }
-
-
 //     UICollectionViewDataSource
 extension CollectionViewController:UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

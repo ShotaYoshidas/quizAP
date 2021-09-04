@@ -26,7 +26,7 @@ class QuizViewController: UIViewController {
     //    overlay
     let overlay:UIView = {
         let ol = UIView()
-        ol.backgroundColor = .black.withAlphaComponent(0.9)
+        ol.backgroundColor = .black.withAlphaComponent(0.7)
         ol.layer.borderColor = UIColor.black.cgColor
         ol.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         return ol
@@ -43,6 +43,19 @@ class QuizViewController: UIViewController {
     //    canvasLabel
     let canvasLabel:UILabel = {
         let cl = UILabel()
+        cl.font  = UIFont.systemFont(ofSize: 23)
+        cl.frame = CGRect(x: 0, y: 0, width: 200, height: 30)
+        cl.backgroundColor = .white
+        cl.textAlignment = NSTextAlignment.center
+        cl.textColor = .red
+        cl.clipsToBounds = true
+        cl.numberOfLines = 0
+        return cl
+    }()
+//        canvasLabel2
+    let canvasLabel2:UILabel = {
+        let cl = UILabel()
+        cl.font  = UIFont.systemFont(ofSize: 20)
         cl.backgroundColor = .white
         cl.textColor = .black
         cl.textAlignment = NSTextAlignment.left
@@ -51,6 +64,7 @@ class QuizViewController: UIViewController {
         cl.numberOfLines = 0
         return cl
     }()
+    
     //    answer Button
     let qanswerButton1:UIButton = {
         let a1 = UIButton()
@@ -59,6 +73,7 @@ class QuizViewController: UIViewController {
         a1.frame = CGRect(x: UIScreen.main.bounds.width/2 - 150, y: 500, width: 300, height: 50)
         a1.setTitleColor(UIColor.black, for: .normal)
         a1.layer.cornerRadius = 10
+        a1.backgroundColor = .white
         a1.tag = 1
         a1.addTarget(self, action: #selector(btnaction), for: UIControl.Event.touchUpInside)
         return a1
@@ -70,6 +85,7 @@ class QuizViewController: UIViewController {
         a2.frame = CGRect(x: UIScreen.main.bounds.width/2 - 150, y: 560, width: 300, height: 50)
         a2.setTitleColor(UIColor.black, for: .normal)
         a2.layer.cornerRadius = 10
+        a2.backgroundColor = .white
         a2.tag = 2
         a2.addTarget(self, action: #selector(btnaction), for: UIControl.Event.touchUpInside)
         return a2
@@ -81,6 +97,7 @@ class QuizViewController: UIViewController {
         a3.frame = CGRect(x: UIScreen.main.bounds.width/2 - 150, y: 620, width: 300, height: 50)
         a3.setTitleColor(UIColor.black, for: .normal)
         a3.layer.cornerRadius = 10
+        a3.backgroundColor = .white
         a3.tag = 3
         a3.addTarget(self, action: #selector(btnaction), for: UIControl.Event.touchUpInside)
         return a3
@@ -92,6 +109,7 @@ class QuizViewController: UIViewController {
         a4.frame = CGRect(x: UIScreen.main.bounds.width/2 - 150, y: 680, width: 300, height: 50)
         a4.setTitleColor(UIColor.black, for: .normal)
         a4.layer.cornerRadius = 10
+        a4.backgroundColor = .white
         a4.tag = 4
         a4.addTarget(self, action: #selector(btnaction), for: UIControl.Event.touchUpInside)
         return a4
@@ -132,14 +150,15 @@ class QuizViewController: UIViewController {
     //    juge imamge
     let jugeimageView:UIImageView = {
         let ji = UIImageView()
-        ji.frame = CGRect(x: UIScreen.main.bounds.width/2 - 70, y: 150, width: 140, height: 140)
+        ji.frame = CGRect(x: UIScreen.main.bounds.width/2 - 80, y: 70, width: 160, height: 160)
         return ji
     }()
     //    quiz Nom
     let quizNumberLabel: UILabel = {
         let l = UILabel()
-        l.frame = CGRect(x: UIScreen.main.bounds.width/2 - 60, y: 100, width: 120, height:50)
+        l.frame = CGRect(x: UIScreen.main.bounds.width/2 - 65, y: 100, width: 130, height:50)
         l.textColor = .black
+        l.textAlignment = .center
         l.font = UIFont.systemFont(ofSize: 40)
         return l
     }()
@@ -157,7 +176,7 @@ class QuizViewController: UIViewController {
     }()
         override func viewDidLoad() {
             super.viewDidLoad()
-            view.backgroundColor = .white
+            view.backgroundColor = UIColor(red: 236/255, green: 211/255, blue: 175/255, alpha: 1)
             corectCount = 0
             incorectCount = 0
             view.addSubview(quizNumberLabel)
@@ -187,19 +206,24 @@ class QuizViewController: UIViewController {
         }
         @objc func btnaction(sender:UIButton) {
             i = Int(quizArray[1])!
-            canvasLabel.text = "[正解]\(quizArray[i+1])\r\r[参考]\(quizArray[6])\r\r[説明]\(quizArray[7])"
+            canvasLabel.text = "[答え]\(quizArray[i+1])"
+            canvasLabel2.text = "[参考]\r\(quizArray[6])\r[説明]\r\(quizArray[7])"
             view.addSubview(overlay)
             overlay.addSubview(canvas)
-            canvas.addSubview(canvasLabel)
+            canvas.addSubview(canvasLabel2)
             canvas.addSubview(nextButton)
+            canvas.addSubview(canvasLabel)
             view.bringSubviewToFront(canvas)
             view.sendSubviewToBack(quizTextView)
             overlay.isHidden = false
             canvas.isHidden = false
+            canvasLabel2.isHidden = false
             canvasLabel.isHidden = false
             nextButton.isHidden = false
             nextButton.pin.bottomRight(2).left(250).top(240)
-            canvasLabel.pin.all(1)
+            canvasLabel2.pin.all(1)
+            canvasLabel.pin.topCenter(10)
+            
             if sender.tag == Int(quizArray[1]){
                 corectCount += 1
                 view.addSubview(jugeimageView)
@@ -236,7 +260,7 @@ class QuizViewController: UIViewController {
             qanswerButton3.isEnabled = false
             qanswerButton4.isEnabled = false
             canvas.isHidden = false
-            canvasLabel.isHidden = false
+            canvasLabel2.isHidden = false
             nextButton.isHidden = false
         }
         @objc func nextQuizAction(sender:UIButton) {
@@ -245,7 +269,7 @@ class QuizViewController: UIViewController {
             qanswerButton2.isEnabled = true
             qanswerButton3.isEnabled = true
             qanswerButton4.isEnabled = true
-            canvasLabel.isHidden = true
+            canvasLabel2.isHidden = true
             canvas.isHidden = true
             nextButton.isHidden = true
             overlay.isHidden = true

@@ -9,6 +9,17 @@ import UIKit
 
 class HowToPlayViewController: UIViewController {
     
+    let text:UITextView = {
+        let t = UITextView()
+        t.layer.borderColor = UIColor.black.cgColor
+        t.layer.borderWidth = 2
+        t.textColor = .black
+        t.frame = CGRect(x: UIScreen.main.bounds.width/2 - 150, y: 230, width: 300, height:250)
+        t.font = UIFont.systemFont(ofSize: 25)
+        t.layer.cornerRadius = 10
+        t.isEditable = false
+        return t
+    }()
     let returnButton:UIButton = {
         let rv = UIButton()
         rv.setTitle("戻る", for: UIControl.State.normal)
@@ -23,6 +34,7 @@ class HowToPlayViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(text)
         view.backgroundColor = UIColor(red: 236/255, green: 211/255, blue: 175/255, alpha: 1)
         view.addSubview(returnButton)
     }
