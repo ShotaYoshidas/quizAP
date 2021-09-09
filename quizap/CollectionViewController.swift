@@ -52,7 +52,7 @@ class CollectionViewController: UIViewController {
     //    canvas
     let canvas:UIImageView = {
         let cv = UIImageView()
-        cv.backgroundColor  = .black
+        cv.backgroundColor  = .white
         cv.layer.cornerRadius = 10
         cv.layer.masksToBounds = true
         cv.layer.borderColor = UIColor.black.cgColor
@@ -118,7 +118,7 @@ class CollectionViewController: UIViewController {
             photos = ["images2","images2","images2","images","images","images","images","images","images","images","images","images","images","images","images"]
             print("キャラ3")
         default:
-            photos = ["a","b","c","z","z","z","z","z","z","z","z","z","z","z","z"]
+            photos = ["a","b","c","d","e","f","g","h","i","z","z","z","z","z","z"]
         }
         
         func separate(){
