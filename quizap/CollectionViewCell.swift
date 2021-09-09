@@ -18,6 +18,7 @@ class CollectionViewCell: UICollectionViewCell {
     let character:UIImageView = {
         let c = UIImageView()
         c.clipsToBounds = true
+        c.backgroundColor = .white
         c.layer.cornerRadius = 10
         return c
     }()

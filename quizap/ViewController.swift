@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         sb.frame = CGRect(x: UIScreen.main.bounds.width/2 - 75, y: 470, width: 150, height: 60)
         sb.setTitleColor(UIColor.white, for: UIControl.State.normal)
         sb.layer.borderWidth = 0
+        
         sb.layer.borderColor = UIColor.white.cgColor
         sb.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         sb.layer.cornerRadius = 10
@@ -63,6 +64,7 @@ class ViewController: UIViewController {
     let myView:MyView1 = {
         let mv = MyView1()
         mv.backgroundColor = UIColor(red: 236/255, green: 211/255, blue: 175/255, alpha: 1)
+//
         return mv
     }()
     override func viewDidLoad() {
@@ -95,6 +97,7 @@ class ViewController: UIViewController {
         self.present(cv, animated: true, completion: nil)
     }
 }
+
 
 class MyView1: UIView {
     override func draw(_ rect:CGRect){
@@ -131,6 +134,7 @@ class MyView1: UIView {
         x.fill()
     }
 }
+
 
 
 
